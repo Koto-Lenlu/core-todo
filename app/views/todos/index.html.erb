@@ -1,10 +1,30 @@
 <div class="contents row">
-  <% @todos.each do |todo| %>
-    <div class="name">
-      <p><%= todo.name %></p>
-      <span class="content_post">
-        <%= todo.comment %>
-      </span>
-    </div>
-  <% end %>
+  <div class="container">
+    <%= form_with(model: @todo, local: true) do |f| %>
+      <h3>
+        Todo登録
+      </h3>
+      <p>タスク名を記入しましょう。</p>
+      <%= f.text_field :name, placeholder: "タスク名" %>
+      <p>タスクの詳細を記入しましょう。</p>
+      <%= f.text_area :comment, placeholder: "タスク詳細"%>
+      <p>見積もりを決めましょう。</p>
+      <%= f.number_field :quote, class: "poms", min: 1, max: 20 %>
+      ポモドーロ
+      <%= f.submit "登録" %>
+    <% end %>
+  </div>
+</div>
+<div class= "contents row">
+  <h2 class="menu">Todo一覧</h2>
+  <div class="todo_list">
+    <% @todos.each do |todo| %>
+      <div class="container">
+        <p>タスク名</p><%= todo.name %>
+        <span class="comment_post">
+        <p>タスク詳細</p><%= todo.comment %>
+        </span>
+      </div>
+    <% end %>
+  </div>
 </div>
