@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @todos.each do |todo| %>
+    <div class="name">
+      <p><%= todo.name %></p>
+      <span class="content_post">
+        <%= todo.comment %>
+      </span>
+    </div>
+  <% end %>
+</div>
