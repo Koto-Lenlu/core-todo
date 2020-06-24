@@ -1,6 +1,6 @@
 class TodosController < ApplicationController
   def index
-    @todos = Todo.all
+    @todo = Todo.new
     @todos = Todo.order('created_at ASC')
   end
 
@@ -11,7 +11,7 @@ class TodosController < ApplicationController
 
   private
   def todo_params
-    params.permit(:name, :comment, :quote)
+    params.require(:todo).permit(:name, :comment, :quote)
   end
   
 

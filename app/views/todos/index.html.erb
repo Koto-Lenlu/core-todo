@@ -4,17 +4,15 @@
       <h3>
         Todo登録
       </h3>
-      <p>タスク名を記入しましょう。</p>
-      <%= f.text_field :name, placeholder: "タスク名" %>
-      <p>タスクの詳細を記入しましょう。</p>
-      <%= f.text_area :comment, placeholder: "タスク詳細"%>
-      <p>見積もりを決めましょう。</p>
+      <%= f.text_field :name, placeholder: "タスク名を記入" %>
+      <%= f.text_area :comment, placeholder: "タスク詳細を記入"%>
       <%= f.number_field :quote, class: "poms", min: 1, max: 20 %>
       ポモドーロ
       <%= f.submit "登録" %>
     <% end %>
   </div>
 </div>
+
 <div class= "contents row">
   <h2 class="menu">Todo一覧</h2>
   <div class="todo_list">
