@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: 'todos#index'
-  resources :todos, only: [:create, :edit]
+  resources :todos, only: [:create, :destroy]
 end
