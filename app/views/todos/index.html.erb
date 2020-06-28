@@ -18,10 +18,15 @@
   <div class="todo_list">
     <% @todos.each do |todo| %>
       <div class="container">
-        <p>タスク名</p><%= todo.name %>
-        <span class="comment_post">
-        <p>タスク詳細</p><%= todo.comment %>
-        </span>
+        <ul>
+        <p class="destroy_btn">
+          <%= link_to '削除', todo_path(todo.id), method: :delete, data: {confirm: "削除しますか？"} %>
+        </p>
+        <p>タスク名</p>
+        <p class="todo"><%= todo.name %></p>
+        <p>タスク詳細</p>
+        <p class="todo"><%= simple_format(todo.comment) %></p>
+      
       </div>
     <% end %>
   </div>
