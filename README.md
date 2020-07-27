@@ -15,11 +15,11 @@
 * ポモドーロ・テクニックは自身と相性が良いため、その機能が盛り込まれたアプリを作ってみたかったために企画を考えました。
 
 ### 実装機能
-https://gyazo.com/89afc8b9c95d18d0fad2026524d5ee2b
+![個人アプリ発表 001](https://user-images.githubusercontent.com/66056185/88551012-52ecad80-d05d-11ea-8dd6-483397c28d72.jpeg)
 1. タスク登録
 2. タスク一覧
 3. タスク削除
 4. タスク処理（未実装）
 
 4番実装予定機能画面
-https://gyazo.com/7067aeed23a8e7d378e635da1dd49798
+![個人アプリ発表 002](https://user-images.githubusercontent.com/66056185/88551089-67c94100-d05d-11ea-82ab-a816bdecbaf9.jpeg)
