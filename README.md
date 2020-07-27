@@ -1,24 +1,15 @@
-# README
+# Core Todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+* URL: https://core-todo-w-poms.herokuapp.com/
 
-* Ruby version
+### どんなアプリケーションなのか
+#### **シンプルなタスク管理アプリ**
+* ポモドーロ・テクニックを使って登録したタスクを１つずつ確実にこなしていくスタイルのタスク管理アプリです。
+##### ※ポモドーロ・テクニックとは、作業25分間と休憩5分間の組み合わせを使った時間管理テクニックです。
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 企画背景
+* １つのタスクに集中できる環境を生み出すことで業務効率を上げられると考えたためにこのアプリを作りました。
+* ポモドーロ・テクニックは自身と相性が良いため、その機能が盛り込まれたアプリを作ってみたかったために企画を考えました。
