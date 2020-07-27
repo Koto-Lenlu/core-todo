@@ -15,7 +15,7 @@
 * ポモドーロ・テクニックは自身と相性が良いため、その機能が盛り込まれたアプリを作ってみたかったために企画を考えました。
 
 ### 実装機能
-https://gyazo.com/89afc8b9c95d18d0fad2026524d5ee2b
+<img src="https://gyazo.com/89afc8b9c95d18d0fad2026524d5ee2b" alt="core-todo画面" title="サンプル">
 1. タスク登録
 2. タスク一覧
 3. タスク削除
