@@ -23,3 +23,5 @@
 
 4番実装予定機能画面
 ![個人アプリ発表 002](https://user-images.githubusercontent.com/66056185/88551089-67c94100-d05d-11ea-82ab-a816bdecbaf9.jpeg)
+
+## DB設計
