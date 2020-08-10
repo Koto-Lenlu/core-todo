@@ -15,11 +15,32 @@
 * ポモドーロ・テクニックは自身と相性が良いため、その機能が盛り込まれたアプリを作りたかった為に企画を考えました。
 
 ### 実装機能
-![個人アプリ発表 001](https://user-images.githubusercontent.com/66056185/88551012-52ecad80-d05d-11ea-8dd6-483397c28d72.jpeg)
-1. タスク登録
-2. タスク一覧
-3. タスク削除
-4. タスク処理（未実装）
+#### ログイン前
+ユーザ登録機能
+<img width="714" alt="スクリーンショット 2020-08-10 14 31 44" src="https://user-images.githubusercontent.com/66056185/89754340-76602f80-db16-11ea-8bd8-842732522957.png">
 
-4番実装予定機能画面
-![個人アプリ発表 002](https://user-images.githubusercontent.com/66056185/88551089-67c94100-d05d-11ea-82ab-a816bdecbaf9.jpeg)
+
+ログイン機能
+<img width="692" alt="スクリーンショット 2020-08-10 14 31 15" src="https://user-images.githubusercontent.com/66056185/89754337-74966c00-db16-11ea-9545-127cd6e79120.png">
+
+#### ログイン後
+タスク管理機能
+<img width="858" alt="スクリーンショット 2020-08-10 14 16 23" src="https://user-images.githubusercontent.com/66056185/89753821-b0303680-db14-11ea-8c61-6db8ef33966b.png">
+
+①. タスク登録\
+②. タスク一覧\
+③. タスク削除\
+④. タスク処理（未実装）
+
+### 実装予定機能
+タスク処理機能
+<img width="906" alt="スクリーンショット 2020-08-10 14 17 32" src="https://user-images.githubusercontent.com/66056185/89753824-b32b2700-db14-11ea-883a-9cabe418953d.png">
+
+①. タスク\
+②. タイマー\
+　A.作業中\
+　B.休憩中\
+③. 終了\
+④. 終了して次
+
+
