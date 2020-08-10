@@ -512,6 +512,9 @@ ul li {
 .row .grid-6 {
   width: 48.2%;
 }
+.row .grid-6-1{
+  width: 30%
+}
 
 .row .grid-7 {
   width: 56.53333%;

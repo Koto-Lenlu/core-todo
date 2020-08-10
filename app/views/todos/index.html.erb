@@ -1,4 +1,5 @@
 <div class="contents row">
+<% if user_signed_in? %>
   <div class="container">
     <%= form_with(model: @todo, local: true) do |f| %>
       <h3>
@@ -8,26 +9,29 @@
       <%= f.text_area :comment, placeholder: "タスク詳細を記入"%>
       <%= f.number_field :quote, class: "poms", min: 1, max: 20 %>
       ポモドーロ
-      <%= f.submit "登録" %>
+      <%= f.submit "登録", class: "reg-btn" %>
     <% end %>
   </div>
 </div>
-
 <div class= "contents row">
   <h2 class="menu">Todo一覧</h2>
   <div class="todo_list">
-    <% @todos.each do |todo| %>
+    <% @mytodos.each do |mytodo| %>
       <div class="container">
         <ul>
         <p class="destroy_btn">
-          <%= link_to '削除', todo_path(todo.id), method: :delete, data: {confirm: "削除しますか？"} %>
+          <%= link_to '削除', todo_path(mytodo.id), method: :delete, data: {confirm: "削除しますか？"} %>
         </p>
         <p>タスク名</p>
-        <p class="todo"><%= todo.name %></p>
+        <p class="todo"><%= mytodo.name %></p>
         <p>タスク詳細</p>
-        <p class="todo"><%= simple_format(todo.comment) %></p>
-      
+        <p class="todo"><%= simple_format(mytodo.comment) %></p>
       </div>
     <% end %>
   </div>
+<% else %>
+<div class= "contents row">
+  <h2>ログインしてください。</h2>
+</div>
+<% end %>
 </div>

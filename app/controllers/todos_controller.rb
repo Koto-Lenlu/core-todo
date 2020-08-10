@@ -1,7 +1,11 @@
 class TodosController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @todo = Todo.new
     @todos = Todo.order('created_at ASC')
+    todos = @todos 
+    @mytodos = current_user.todos
   end
 
   def create
@@ -17,7 +21,7 @@ class TodosController < ApplicationController
 
   private
   def todo_params
-    params.require(:todo).permit(:name, :comment, :quote)
+    params.require(:todo).permit(:name, :comment, :quote).merge(user_id: current_user.id)
   end
 
 end
