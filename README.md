@@ -3,6 +3,8 @@
 ## 概要
 
 * URL: https://core-todo-w-poms.herokuapp.com/
+* テストアカウントEmail：test@test
+* テストアカウントPassword：12345678
 
 ### どんなアプリケーションなのか
 #### **シンプルなタスク管理アプリ**
