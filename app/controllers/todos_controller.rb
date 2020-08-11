@@ -5,7 +5,7 @@ class TodosController < ApplicationController
     @todo = Todo.new
     @todos = Todo.order('created_at ASC')
     todos = @todos 
-    # @mytodos = current_user.todos
+    @mytodos = current_user.todos
   end
 
   def create
