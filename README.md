@@ -17,11 +17,11 @@
 ### 実装機能
 #### ログイン前
 ユーザ登録機能
-<img width="714" alt="スクリーンショット 2020-08-10 14 31 44" src="https://user-images.githubusercontent.com/66056185/89754340-76602f80-db16-11ea-8bd8-842732522957.png">
+<img width="699" alt="スクリーンショット 2020-08-12 7 30 38" src="https://user-images.githubusercontent.com/66056185/89955601-59d70b00-dc6e-11ea-9980-b4de5d4d5fb1.png">
 
 
 ログイン機能
-<img width="692" alt="スクリーンショット 2020-08-10 14 31 15" src="https://user-images.githubusercontent.com/66056185/89754337-74966c00-db16-11ea-9545-127cd6e79120.png">
+<img width="685" alt="スクリーンショット 2020-08-12 7 34 35" src="https://user-images.githubusercontent.com/66056185/89955606-5c396500-dc6e-11ea-87eb-c700e4109861.png">
 
 #### ログイン後
 タスク管理機能
