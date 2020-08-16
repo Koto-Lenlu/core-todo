@@ -45,4 +45,27 @@
 ③. 終了\
 ④. 終了して次
 
+### 開発環境
+* Ruby/Ruby on Rails/HTML/CSS/PostgreSQL/Github/heroku/Visual Studio Code
 
+# DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+### Association
+- has_many :todos, dependent: :destroy
+
+## todosテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|comment|text||
+|quote|integer||
+|user_id|integer||
+
+### Association
+
+- belongs_to :user
