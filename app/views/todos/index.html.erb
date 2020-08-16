@@ -8,25 +8,35 @@
       <%= f.text_field :name, placeholder: "タスク名を記入" %>
       <%= f.text_area :comment, placeholder: "タスク詳細を記入"%>
       <%= f.number_field :quote, class: "poms", min: 1, max: 20 %>
-      ポモドーロ
+      <p class=pomodoro_quote>ポモドーロ（予測）</p>
       <%= f.submit "登録", class: "reg-btn" %>
     <% end %>
   </div>
 </div>
 <div class= "contents row">
   <h2 class="menu">Todo一覧</h2>
-  <div class="todo_list">
     <% @mytodos.each do |mytodo| %>
-      <div class="container">
-        <ul>
-        <p class="destroy_btn">
-          <%= link_to '削除', todo_path(mytodo.id), method: :delete, data: {confirm: "削除しますか？"} %>
-        </p>
-        <p>タスク名</p>
-        <p class="todo"><%= mytodo.name %></p>
-        <p>タスク詳細</p>
-        <p class="todo"><%= simple_format(mytodo.comment) %></p>
+    <div class="container">
+      <div class="content_post">
+        <div class="more">
+          <span class="fas fa-bars"></span>
+          <ul class="more_list">
+            <li>
+              <%= link_to 'ポモドーロGO', todo_path(mytodo.id), method: :get %>
+            </li>
+            <li>
+              <%= link_to '削除', todo_path(mytodo.id), method: :delete, data: {confirm: "削除しますか？"} %>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p class="todo_title">タスク名</p>
+      <p class="todo"><%= mytodo.name %></p>
+      <p class="todo_title">タスク詳細</>
+      <p class="todo"><%= simple_format(mytodo.comment) %></p>
+      <p class="pomodoro_quote"><%= mytodo.quote %></p>
+      <p class="pomodoro_quote">ポモドーロ（予測）</p>
+    </div>
     <% end %>
   </div>
 <% else %>
