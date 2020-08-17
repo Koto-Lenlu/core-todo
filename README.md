@@ -27,12 +27,13 @@
 
 #### ログイン後
 タスク管理機能
-<img width="858" alt="スクリーンショット 2020-08-10 14 16 23" src="https://user-images.githubusercontent.com/66056185/89753821-b0303680-db14-11ea-8c61-6db8ef33966b.png">
+<img width="654" alt="スクリーンショット 2020-08-17 10 34 07" src="https://user-images.githubusercontent.com/66056185/90349572-54fec680-e075-11ea-9d7c-a2864cb7ae5c.png">
 
 ①. タスク登録\
 ②. タスク一覧\
 ③. タスク削除\
-④. タスク処理（未実装）
+④. タスク処理（未実装）\
+⑤. ログアウト
 
 ### 実装予定機能
 タスク処理機能
