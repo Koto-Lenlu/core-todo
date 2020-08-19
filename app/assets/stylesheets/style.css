@@ -342,12 +342,7 @@ table {
   border-spacing: 0;
 }
 
-/* ==========================================================================
- * CSS SETTING
- * by Hiroaki WAKATSUKI
- * Converted 2014/2/16
- * Arranged for CoreTodo by Koto Takeda, 2020/08/16
- * ========================================================================== */
+
 *,
 *:before,
 *:after {
@@ -691,7 +686,7 @@ form input[type="submit"]:hover {
   color: #ca2222;
 }
 
-/* Hiddenメニュー記述 */
+/* 隠しメニュー記述 */
 div.contents.row div.content_post .more {
   position: absolute;
   cursor: pointer;

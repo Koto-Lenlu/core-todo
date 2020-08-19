@@ -1,4 +1,4 @@
 class Todo < ApplicationRecord
-  validates :name, :quote, presence: true
+  validates :name, :comment, :quote, presence: true
   belongs_to :user
 end

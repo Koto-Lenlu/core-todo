@@ -13,20 +13,23 @@
 
 
 ### 企画背景
-* １つのタスクに集中できる環境を生み出すことで業務効率を上げられると考えた為にこのアプリを作りました。
+* リモート作業が多くなる昨今、１つのタスクに集中できる環境を生み出すことで業務効率を上げられると考えた為にこのアプリを作りました。
 * ポモドーロ・テクニックは自身と相性が良いため、その機能が盛り込まれたアプリを作りたかった為に企画を考えました。
 
 ### 実装機能
 #### ログイン前
 ユーザ登録機能
-<img width="699" alt="スクリーンショット 2020-08-12 7 30 38" src="https://user-images.githubusercontent.com/66056185/89955601-59d70b00-dc6e-11ea-9980-b4de5d4d5fb1.png">
+![新規登録](https://user-images.githubusercontent.com/66056185/90588850-9cbd5380-e217-11ea-9ea6-5c8f05c2859e.gif)
 
 
 ログイン機能
-<img width="685" alt="スクリーンショット 2020-08-12 7 34 35" src="https://user-images.githubusercontent.com/66056185/89955606-5c396500-dc6e-11ea-87eb-c700e4109861.png">
+![ログイン画面](https://user-images.githubusercontent.com/66056185/90650941-6f07f700-e277-11ea-9771-06cded3174d1.gif)
 
 #### ログイン後
-タスク管理機能
+タスク登録閲覧機能
+
+![タスク登録削除機能](https://user-images.githubusercontent.com/66056185/90650599-0caef680-e277-11ea-979c-1714127f7493.gif)
+
 <img width="654" alt="スクリーンショット 2020-08-17 10 34 07" src="https://user-images.githubusercontent.com/66056185/90349572-54fec680-e075-11ea-9d7c-a2864cb7ae5c.png">
 
 ①. タスク登録\
