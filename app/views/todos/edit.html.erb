@@ -8,7 +8,7 @@
       <%= f.text_area :comment, placeholder: "タスク詳細を記入"%>
       <%= f.number_field :quote, class: "poms", min: 1, max: 20 %>
       <p class=pomodoro_quote>ポモドーロ（予測）</p>
-      <%= f.submit "登録", class: "reg-btn" %>
+      <%= f.submit "更新",data: {confirm: "更新しますか？"}, class: "reg-btn" %>
     <% end %>
   </div>
 </div>

@@ -17,8 +17,8 @@ class TodosController < ApplicationController
 
   def update
     todo = Todo.find(params[:id])
-    todo.update(todo_params)
-    redirect_to :root
+    todo.update(todo_params) 
+    redirect_to :root, notice: "更新しました"
   end  
 
   def pomodoro

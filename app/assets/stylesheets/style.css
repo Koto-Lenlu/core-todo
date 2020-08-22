@@ -342,7 +342,9 @@ table {
   border-spacing: 0;
 }
 
-
+/* -moz- = Firefox
+ * -webkit- = Chrome Safari */
+ /* 疑似要素 ::before, ::after */
 *,
 *:before,
 *:after {
@@ -351,6 +353,7 @@ table {
   box-sizing: border-box;
 }
 
+/* アンチエイリアス記述 */
 .antialiased {
   -webkit-font-smoothing: antialiased;
 }
@@ -578,11 +581,6 @@ div.contents.row h2 {
   font-weight: normal;
 }
 
-div.contents.row h2 strong {
-  font-weight: bold;
-  padding-right: 5px;
-  font-size: 1.2em;
-}
 
 div.contents.row .new_user {
   font-family: "游ゴシック", "YuGothic";
@@ -686,7 +684,7 @@ form input[type="submit"]:hover {
   color: #ca2222;
 }
 
-/* 隠しメニュー記述 */
+/* ハンバーガーメニュー */
 div.contents.row div.content_post .more {
   position: absolute;
   cursor: pointer;
@@ -717,4 +715,19 @@ div.contents.row div.content_post .more ul.more_list {
 
 div.contents.row div.content_post .more ul.more_list li {
   border-bottom: 1px solid #ddd;
+}
+
+/* ポモドーロタイマー */
+
+.pomodoro_timer{
+  display: flex;
+}
+
+#box{
+  
+  margin:0 auto;
+}
+
+#timer {
+  font-size: 100px;
 }
