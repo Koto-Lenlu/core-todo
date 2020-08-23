@@ -2,7 +2,7 @@
   <div class="header__bar row">
     <h1 class="grid-6"><a href="/">CoreTodo</a></h1>
     <div class="grid-6">
-      <%= link_to "ポモドーロDone", todo_path(@todo.id), method: :update, data: {confirm: "本当に終了しますか？"}, class: "post2" %>
+      <%= link_to "ポモドーロDone", root_path, method: :update, data: {confirm: "本当に終了しますか？"}, class: "post2" %>
       <%= link_to "ポモドーロNext", pomodoro_todo_path(@todo.next), data: {confirm: "本当に終了しますか？"}, class: "post2" %>
     </div>
   </div>
@@ -43,7 +43,7 @@ $(function(){
   var min;
   var sec;
 
-  function startTimer() {
+  function startTimer25() {
     time -= 1;
     min = Math.floor( time / 60 );
     sec = time % 60;
@@ -51,7 +51,7 @@ $(function(){
     sec = ('00' + sec).slice(-2);
     $('#timer').html(min + ":" + sec);
     if (time === 0) {
-      $('#timer').html("Time&nbspUP!");
+      $('#timer').html("5分休憩!");
       clearInterval(setI);
     }
   }
@@ -71,7 +71,7 @@ $(function(){
   });
 
   function startInterval() {
-    setI = setInterval(startTimer,1000);
+    setI = setInterval(startTimer25,1000);
   }
 });
 </script>

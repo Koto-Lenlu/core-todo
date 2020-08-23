@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources :todos, only: [:index, :create, :destroy, :edit, :update] do
     member do
       get 'pomodoro'
-      post 'done'
-      post 'next'
+      # post 'done'
+      # post 'next'
     end
   end
 end
