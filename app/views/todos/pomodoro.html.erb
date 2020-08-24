@@ -2,8 +2,11 @@
   <div class="header__bar row">
     <h1 class="grid-6"><a href="/">CoreTodo</a></h1>
     <div class="grid-6">
-      <%= link_to "ポモドーロDone", root_path, method: :update, data: {confirm: "本当に終了しますか？"}, class: "post2" %>
-      <%= link_to "ポモドーロNext", pomodoro_todo_path(@todo.next), data: {confirm: "本当に終了しますか？"}, class: "post2" %>
+      <%= link_to "ポモドーロDone", root_path, data: {confirm: "本当に終了しますか？"}, class: "post2" %>
+      <% if @todo.next.present?%>
+        <%= link_to "ポモドーロNext", pomodoro_todo_path(@todo.next), data: {confirm: "本当に終了しますか？"}, class: "post2" %>
+      <% else %>
+      <% end %>
     </div>
   </div>
 </header>
@@ -25,25 +28,28 @@
   <div class="container">
     <div class= "pomodoro_timer">
       <div id = "box">
+        <div id = "pom_img">
+          <%= image_tag 'tomato_green.png', size:'120x90' %>
+        </div>
         <div id ="timer">25:00</div>
         <form>
           <input type ="button" id ="start" name ="start" value ="スタート">
           <input type ="button" id ="stop"  name ="stop" value ="ストップ" >
           <input type ="button" id ="reset" name ="reset" value ="リセット">
         </form>
-      </div>
+      ※次タスクへ遷移する際は、タイマーを止めてから行ってください。</div>
     </div>
   </div>
 </div>
-
 <script>
+
 $(function(){
-  var time = 1500;
+  var time = 10;
   var setI;
   var min;
   var sec;
 
-  function startTimer25() {
+  function startTimer() {
     time -= 1;
     min = Math.floor( time / 60 );
     sec = time % 60;
@@ -51,10 +57,15 @@ $(function(){
     sec = ('00' + sec).slice(-2);
     $('#timer').html(min + ":" + sec);
     if (time === 0) {
-      $('#timer').html("5分休憩!");
       clearInterval(setI);
+      time = 300;
+      $('#start').prop('disabled',false);
+      $('#timer').html("05:00");
     }
   }
+  $('#start').on("click",function(){
+    $('#pom_img').children('img').attr('src','/assets/tomato_red.png');
+  });
   $('#start').on("click",function(){
     $('#start').prop('disabled',true);
     startInterval();
@@ -62,6 +73,9 @@ $(function(){
   $('#stop').on("click",function stopTimer() {
     clearInterval(setI);
     $('#start').prop('disabled',false);
+  });
+  $('#reset').on("click",function() {
+    $('#pom_img').children('img').attr('src','/assets/tomato_green.png');
   });
   $('#reset').on("click",function resetTimer() {
     clearInterval(setI);
@@ -71,7 +85,8 @@ $(function(){
   });
 
   function startInterval() {
-    setI = setInterval(startTimer25,1000);
+    setI = setInterval(startTimer,1000);
   }
 });
+
 </script>

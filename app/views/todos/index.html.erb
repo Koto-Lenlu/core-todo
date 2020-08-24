@@ -21,7 +21,7 @@
           <span class="fas fa-bars"></span>
           <ul class="more_list">
             <li>
-              <%= link_to 'ポモドーロGO(未実装)', pomodoro_todo_path(todo.id) %>
+              <%= link_to 'ポモドーロGO(未完成)', pomodoro_todo_path(todo.id) %>
             </li>
             <li>
               <%= link_to '編集', edit_todo_path(todo.id) %>
@@ -38,6 +38,7 @@
       <p class="todo"><%= simple_format(todo.comment) %></p>
       <p class="pomodoro_quote"><%= todo.quote %></p>
       <p class="pomodoro_quote">ポモドーロ（予測）</p>
+      
     </div>
   <% end %>
 </div>
