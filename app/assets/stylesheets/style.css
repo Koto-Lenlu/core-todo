@@ -342,7 +342,9 @@ table {
   border-spacing: 0;
 }
 
-
+/* -moz- = Firefox
+ * -webkit- = Chrome Safari */
+ /* 疑似要素 ::before, ::after */
 *,
 *:before,
 *:after {
@@ -351,6 +353,7 @@ table {
   box-sizing: border-box;
 }
 
+/* アンチエイリアス記述 */
 .antialiased {
   -webkit-font-smoothing: antialiased;
 }
@@ -490,7 +493,7 @@ a {
 }
 
 a:hover {
-  color: #22cab4;
+  color: #0fb956;
 }
 
 .bold {
@@ -521,8 +524,8 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 10px 6px;
   font-size: 12px;
-  border: 2px solid #22cab4;
-  color: #22cab4;
+  border: 2px solid #02943f;
+  color: #02943f;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -578,11 +581,6 @@ div.contents.row h2 {
   font-weight: normal;
 }
 
-div.contents.row h2 strong {
-  font-weight: bold;
-  padding-right: 5px;
-  font-size: 1.2em;
-}
 
 div.contents.row .new_user {
   font-family: "游ゴシック", "YuGothic";
@@ -599,7 +597,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #029480;
+  background-color: #02943f;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -607,14 +605,14 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #22cab4;
+  background-color: #29c76b;
 }
 
 .container {
   margin: 20px 0;
   padding: 20px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
+  background-color: #fff;
   box-sizing: border-box;
   position: relative;
 }
@@ -650,7 +648,7 @@ form input[type="submit"]:hover {
 }
 
 .reg-btn {
-  background-color: #029480;
+  background-color: #02943f;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -664,6 +662,7 @@ form input[type="submit"]:hover {
 .poms {
   width: 30%;
 }
+
 .pomodoro_quote {
   margin-right: 10px;
   margin-left: 10px;
@@ -674,19 +673,21 @@ form input[type="submit"]:hover {
 .post2 {
   padding: 10px 6px;
   font-size: 12px;
-  border: 2px solid #22cab4;
-  color: #22cab4;
+  border: 2px solid #02943f;
+  color: #02943f;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
   display: inline-block;
 }
+
+
 .post2:hover {
   border-color: #d40101;
   color: #ca2222;
 }
 
-/* 隠しメニュー記述 */
+/* ハンバーガーメニュー */
 div.contents.row div.content_post .more {
   position: absolute;
   cursor: pointer;
@@ -717,4 +718,63 @@ div.contents.row div.content_post .more ul.more_list {
 
 div.contents.row div.content_post .more ul.more_list li {
   border-bottom: 1px solid #ddd;
+}
+
+/* ポモドーロタイマー */
+
+.pomodoro_timer{
+  display: flex;
+  position: relative;
+}
+#pom_img {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+}
+#box{
+  margin:0 auto;
+  font-size: 10px;
+}
+
+#timer {
+  text-align: right;
+  font-size: 100px;
+}
+
+.pom_doing {
+  color: #fff;
+  background-color: #ca2222;
+}
+
+.pom_stop {
+  color: #fff;
+  background-color: #02943f;
+}
+
+#start,
+#stop,
+#reset {
+  width: 32.3%;
+  font-size: 16px;
+  text-align: center;
+}
+
+#start:hover {
+  color: #fff;
+  background-color: #ca2222;
+  transition-duration: 0.2s;
+}
+
+#stop:hover {
+  color: #fff;
+  background-color: #666;
+  transition-duration: 0.2s;
+}
+
+#reset:hover {
+  color: #fff;
+  background-color: #02943f;
+  transition-duration: 0.2s;
 }

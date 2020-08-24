@@ -18,36 +18,54 @@
 
 ### 実装機能
 #### ログイン前
-ユーザ登録機能
-![新規登録](https://user-images.githubusercontent.com/66056185/90588850-9cbd5380-e217-11ea-9ea6-5c8f05c2859e.gif)
-
 
 ログイン機能
-![ログイン画面](https://user-images.githubusercontent.com/66056185/90650941-6f07f700-e277-11ea-9771-06cded3174d1.gif)
+![ログイン画面2](https://user-images.githubusercontent.com/66056185/91019063-645cb180-e62b-11ea-83a8-3aec745fa61f.gif)
+
+ユーザ登録機能
+![新規登録](https://user-images.githubusercontent.com/66056185/91019567-26ac5880-e62c-11ea-8320-b2ad586e4ea5.gif)
+
 
 #### ログイン後
-タスク登録閲覧機能
+タスク登録/閲覧機能
+![タスク登録](https://user-images.githubusercontent.com/66056185/91024580-1fd51400-e633-11ea-9fdb-c1adc8523361.gif)
 
-![タスク登録削除機能](https://user-images.githubusercontent.com/66056185/90650599-0caef680-e277-11ea-979c-1714127f7493.gif)
 
-<img width="654" alt="スクリーンショット 2020-08-17 10 34 07" src="https://user-images.githubusercontent.com/66056185/90349572-54fec680-e075-11ea-9d7c-a2864cb7ae5c.png">
+タスク編集/削除機能
+![編集削除機能](https://user-images.githubusercontent.com/66056185/91025533-7c84fe80-e634-11ea-8168-15c9d6de59c7.gif)
+
+<img width="941" alt="スクリーンショット 2020-08-24 15 57 06" src="https://user-images.githubusercontent.com/66056185/91013359-8bfb4c00-e622-11ea-8034-b92d4a24eaa7.png">
 
 ①. タスク登録\
 ②. タスク一覧\
-③. タスク削除\
-④. タスク処理（未実装）\
-⑤. ログアウト
+③. タスク処理（未実装）\
+④. タスク編集\
+⑤. タスク削除\
+⑥. ログアウト
 
-### 実装予定機能
-タスク処理機能
-<img width="906" alt="スクリーンショット 2020-08-10 14 17 32" src="https://user-images.githubusercontent.com/66056185/89753824-b32b2700-db14-11ea-883a-9cabe418953d.png">
 
-①. タスク\
-②. タイマー\
-　A.作業中\
-　B.休憩中\
-③. 終了\
-④. 終了して次
+### ポモドーロタイマー機能
+
+![ポモドーロ機能](https://user-images.githubusercontent.com/66056185/91025558-8575d000-e634-11ea-930e-795ffb96ff8d.gif)
+
+<img width="959" alt="スクリーンショット 2020-08-24 16 07 23" src="https://user-images.githubusercontent.com/66056185/91014984-5a37b480-e625-11ea-9ea0-b15788aacae6.png">
+
+①. 選択したタスク\
+②. ポモドーロタイマー\
+　−25分のタイマーが終了すると5分のタイマーが使えるようになります。\
+　−5分のタイマーが終わったら、リセットボタンを押すことで25分のタイマーが再び使えます\
+　−スタートボタンを押し、タイマーが動くとトマトが赤くなります。
+　−リセットボタンが押されるとトマトは緑に戻ります。
+③. スタートボタン\
+④. ストップボタン\
+⑤. リセットボタン\
+⑥. 終了してホームへ\
+⑦. 終了して次のタスクへ\
+　※次のタスクへ移動する際はタイマーを止めてから移動してください。
+
+### トマト画像作成
+macbookに初期から備わっているkeynoteを使ってトマトのアイコンを作成しました。
+![トマト作成2](https://user-images.githubusercontent.com/66056185/91018115-21e6a500-e62a-11ea-96ef-706f336b8fd5.gif)
 
 ### 開発環境
 * Ruby/Ruby on Rails/HTML/CSS/PostgreSQL/Github/heroku/Visual Studio Code
