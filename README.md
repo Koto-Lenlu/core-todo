@@ -67,6 +67,11 @@
 macbookに初期から備わっているkeynoteを使ってトマトのアイコンを作成しました。
 ![トマト作成2](https://user-images.githubusercontent.com/66056185/91018115-21e6a500-e62a-11ea-96ef-706f336b8fd5.gif)
 
+### 今後の実装予定
+* 実績のデータを追加し、ポモドーロタイマーと連動させる。
+* 実績がポモドーロタイマー横に表示されるようにする。
+* 未完了タスクと完了タスクをメイン画面で分けて閲覧できるようにする。
+ 
 ### 開発環境
 * Ruby/Ruby on Rails/HTML/CSS/PostgreSQL/Github/heroku/Visual Studio Code
 
