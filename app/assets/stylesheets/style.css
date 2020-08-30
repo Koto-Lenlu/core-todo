@@ -726,11 +726,13 @@ div.contents.row div.content_post .more ul.more_list li {
   display: flex;
   position: relative;
 }
+
 #pom_img {
   position: absolute;
   top: 8%;
   right: 61%;
 }
+
 #box{
   margin:0 auto;
   font-size: 0.5em;
